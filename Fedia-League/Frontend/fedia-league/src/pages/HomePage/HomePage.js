@@ -2,8 +2,13 @@
 import React from "react";
 import styled from 'styled-components';
 import logoJeju from '../../components/Img/jeju.png'
-import { FonteNegrito, FonteStatus, Lista, Nickname } from "./styled";
-import App from "./Tabela"
+import { ButtonDireita, ButtonEsquerda, Flex1, FonteNegrito, FonteStatus, Lista, Lista1, Nickname } from "./styled";
+import Posicao from "./Tabela"
+import Artilharia from "./Artilharia";
+import MVP from "./MVP";
+import ArtilhariaCopa from "./ArtilhariaCopa";
+import MVPcopa from "./MVPcopa";
+
 
 
 export const Home = styled.div`
@@ -88,7 +93,51 @@ export const HomePage = () => {
 
       <div>
 
-        <Esquerda> Esquerda              </Esquerda>
+        <Esquerda> 
+          <Lista1>
+          <ButtonEsquerda>
+           Início
+          </ButtonEsquerda>
+
+          <ButtonEsquerda>
+           Tabelas
+          </ButtonEsquerda>
+
+          <ButtonEsquerda>
+            Jogadores
+          </ButtonEsquerda>
+
+          <ButtonEsquerda>
+           Notícias
+          </ButtonEsquerda>
+
+          <ButtonEsquerda>
+            Historico Financeiro
+          </ButtonEsquerda>
+          <ButtonEsquerda>
+            Transferências
+          </ButtonEsquerda>
+          <ButtonEsquerda>
+            Partidas
+          </ButtonEsquerda>
+          <ButtonEsquerda>
+            Temporadas
+          </ButtonEsquerda>
+          <ButtonEsquerda>
+           Cartões e Lesões
+          </ButtonEsquerda>
+          <ButtonEsquerda>
+            Regulamento
+          </ButtonEsquerda>
+          <ButtonEsquerda>
+           Usuários
+          </ButtonEsquerda>
+          <ButtonEsquerda>
+            Sair
+          </ButtonEsquerda>
+       
+        </Lista1>
+        </Esquerda>
       </div>
 
       <Container>
@@ -156,12 +205,49 @@ export const HomePage = () => {
 
         <div>
           {/* Tabela FEDIA league    */}
-          <App></App>
+          <Posicao></Posicao>
+          <Flex1>
+
+            <Artilharia></Artilharia>
+
+            <MVP></MVP>
+
+          </Flex1>
+          <Flex1>
+
+            <ArtilhariaCopa></ArtilhariaCopa>
+
+            <MVPcopa></MVPcopa>
+
+          </Flex1>
+
         </div>
       </Container>
 
       <Direita>
-        <Direita> Direita</Direita>
+        <Direita>
+          <Lista1>
+            <ButtonDireita>
+              Artilharia da Liga
+            </ButtonDireita>
+
+            <ButtonDireita>
+              MVP da Liga
+            </ButtonDireita>
+
+            <ButtonDireita>
+              Copa
+            </ButtonDireita>
+
+            <ButtonDireita>
+              Artilharia da Copa
+            </ButtonDireita>
+
+            <ButtonDireita>
+              MVP da Copa
+            </ButtonDireita>
+          </Lista1>
+        </Direita>
 
       </Direita>
 
