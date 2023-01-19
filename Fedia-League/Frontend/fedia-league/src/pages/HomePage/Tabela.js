@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonCenter, Caption, Td, Th, Tr } from './styled';
+import { ButtonCenter, Caption, TableColocacao, Td, Th, Tr } from './styled';
 import './styles.css';
 
 const useSortableData = (items, config = null) => {
@@ -45,7 +45,7 @@ export const ProductTable = (props) => {
     return sortConfig.key === posicao ? sortConfig.direction : undefined;
   };
   return (
-    <table>
+    <TableColocacao>
       <Caption>Tabela Liga FEDIA</Caption>
       <thead>
         <Tr>
@@ -160,13 +160,13 @@ export const ProductTable = (props) => {
           </tr>
         ))}
       </tbody>
-    </table>
+    </TableColocacao>
   );
 };
 
-export default function App() {
+export default function Posicao() {
   return (
-    <div classposicao="App">
+    <div classposicao="Posicao">
       <ProductTable
         products={[
           { id: 1, posicao: 1, time: "Toronto", P: 32, J: 14, V: 10, E: 2, D: 2, GP: 41, GC: 15, SG: 26 },
