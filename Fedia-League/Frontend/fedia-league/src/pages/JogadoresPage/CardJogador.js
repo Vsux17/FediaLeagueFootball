@@ -4,9 +4,26 @@ import './style.css';
 import styled from 'styled-components';
 
 export const H4Card = styled.h4`
- margin-bottom: -28px;
+ margin-bottom: -20px;
+ font-weight: bold;
+`;
+export const Name = styled.p`
+ /* margin-bottom: 20px; */
+ display: 'flex', 
+ /* alignItems: 'center', */
+ alignItems: 'flex-end'
+ text-align: center;
+ font-family: Arial, sans-serif;
+ font-size: 32px;
+ font-weight: bold;
 
 `;
+export const Overall = styled.h2`
+ margin-top: 25px;
+
+`;
+
+
 export const ContainerPrincipal = styled.div`
  display: grid;
  grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
@@ -38,17 +55,16 @@ export const CardJogador = (props) => {
                     <div><h2 class="colorWhite">
                     </h2></div>
                     <div class="colorWhite" > {props.jogador.posicao} </div>
-                    <h2 class="colorWhite" > {props.jogador.overal}
+                    <Overall class="colorWhite" > {props.jogador.overal}
     
-                    </h2>
+                    </Overall>
     
                     <H4Card>
-                        <img height="15" width="15" src="https://cdn.discordapp.com/attachments/374204805192876044/956689976823779408/unknown.png"></img>
-                        {props.jogador.fintaStar} {props.jogador.finta}
+
                     </H4Card>
                     <H4Card>
-                        <img height="15" width="15" src="https://cdn.discordapp.com/attachments/374204805192876044/956689976823779408/unknown.png"></img>
-                        {props.jogador.prStar} {props.jogador.pernaRuim}
+                        
+                       
                     </H4Card>
     
     
@@ -59,8 +75,11 @@ export const CardJogador = (props) => {
     
                     </div>
                     <div class="contentBx colorWhite">
-                        <p> a</p>
-                        <h4  >{props.jogador.nome}</h4>
+                      
+                        <br></br>
+                        
+                            
+                        <Name  >{props.jogador.nome}</Name>
                         <div class="size">
                             <h6>Valor de Mercado </h6>
                             <SpanCard>{props.jogador.valorDeMercado}M</SpanCard>

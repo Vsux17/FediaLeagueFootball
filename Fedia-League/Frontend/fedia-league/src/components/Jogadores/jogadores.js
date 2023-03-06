@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.listaDeJogadores = void 0;
 exports.listaDeJogadores = [
     {
-        nome: "L. Messi",
+        nome: "Lionel Messi",
         overal: 93,
         posicao: "PD|ATA|SA",
         idade: 34,
@@ -16,7 +16,7 @@ exports.listaDeJogadores = [
         valorDeMercado: 78
     },
     {
-        nome: "	R. Lewandowski",
+        nome: "	Robert Lewandowski",
         overal: 92,
         posicao: "ATA",
         idade: 29,
@@ -120,3 +120,4 @@ exports.listaDeJogadores = [
         valorDeMercado: 129
     },
 ];
+

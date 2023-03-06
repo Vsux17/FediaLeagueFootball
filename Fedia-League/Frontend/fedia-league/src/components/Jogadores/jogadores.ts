@@ -28,7 +28,7 @@ export const listaDeJogadores = [
 
 
     {
-        nome: "L. Messi",
+        nome: "Lionel Messi",
         overal: 93,
         posicao: "PD|ATA|SA",
         idade: 34,
@@ -85,7 +85,7 @@ export const listaDeJogadores = [
         valorDeMercado: 194
     },
     {
-        nome: "K. Benzema",
+        nome: "Karin Benzema",
         overal: 91,
         posicao: "PD",
         idade: 33,
