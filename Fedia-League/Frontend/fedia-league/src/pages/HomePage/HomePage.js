@@ -8,7 +8,7 @@ import Artilharia from "./Artilharia";
 import MVP from "./MVP";
 import ArtilhariaCopa from "./ArtilhariaCopa";
 import MVPcopa from "./MVPcopa";
-
+import { Link } from 'react-router-dom';
 
 
 export const Home = styled.div`
@@ -95,17 +95,21 @@ export const HomePage = () => {
 
         <Esquerda> 
           <Lista1>
-          <ButtonEsquerda>
-           Início
-          </ButtonEsquerda>
+         <Link to="/" >
+            <ButtonEsquerda   >
+             Início
+            </ButtonEsquerda>
+         </Link>
 
           <ButtonEsquerda>
            Tabelas
           </ButtonEsquerda>
-
-          <ButtonEsquerda>
-            Jogadores
-          </ButtonEsquerda>
+<Link to="/lista-jogadores">
+  
+            <ButtonEsquerda>
+              Jogadores
+            </ButtonEsquerda>
+</Link>
 
           <ButtonEsquerda>
            Notícias

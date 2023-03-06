@@ -4,6 +4,9 @@ import { listaDeJogadores } from "../../components/Jogadores/jogadores"
 import { CardJogador, ContainerPrincipal } from "./CardJogador"
 import { TelaHome } from "./style"
 import styled from 'styled-components';
+import Header from './../Header/Header/Header';
+import Tabela from './../../components/Filtro';
+
 
 
 export const HeaderFedia = styled.header`
@@ -18,6 +21,7 @@ export const FediaNome = styled.div`
  align-items: center;
 
 `;
+
 
 
 
@@ -37,30 +41,21 @@ export const Player = () => {
 
     return (
         <div>
+            
+
             <HeaderFedia  > <img width="60px" src="https://cdn.discordapp.com/attachments/374204805192876044/956709850723799060/pp.png" ></img>
                 <FediaNome> Fedia</FediaNome>
-                <FediaNome> Filtro:
-                    <TextField
-                        variant="standard"
-                        placeholder=" ex: Neymar"
+             
+                    
 
-                    ></TextField>
-                    <Button
-                        variant="contained"
-
-                    >filtrar</Button>
-                </FediaNome>
+<Tabela></Tabela>
+             
+                    
+                  
             </HeaderFedia>
             <TelaHome>
 
-                <div>
-                    <br></br>
-                    <br></br>
-                    <strong>Legenda:</strong>
-                    <br></br>fnt = Fintas
-                    <br></br> pr = Perna Ruim
-                </div>
-
+            <Header></Header>
 
 
                 <ContainerPrincipal>{listPlayer}</ContainerPrincipal>
